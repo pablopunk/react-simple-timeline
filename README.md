@@ -27,7 +27,7 @@ import Timeline from 'react-simple-timeline'
 //...
 
 <h1>Dwigth Schrute</h1>
-<Timeline stories=[
+<Timeline stories={[
   {
     "title": "Dunder Mifflin",
     "subtitle": "Regional Manager",
@@ -46,7 +46,7 @@ import Timeline from 'react-simple-timeline'
     "date": "Since ever",
     "link": "https://theflatearthsociety.org/home/"
   }
-] />
+]} />
 ```
 
 <img width=300 src="https://github.com/pablopunk/art/raw/master/react-simple-timeline/dwight.png" />
