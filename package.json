@@ -1,7 +1,7 @@
 {
   "name": "react-simple-timeline",
   "description": "Simple and responsive timeline component for React",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bugs": {
     "url": "https://github.com/pablopunk/react-simple-timeline/issues",
