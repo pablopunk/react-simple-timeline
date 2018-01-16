@@ -17,11 +17,18 @@ export default class extends React.Component {
             <FadeOrNot className={this.props.fade ? 'story-fade' : ''}>
               {this.props.stories.map((story, i) => (
                 <div key={i} className='story'>
-                  <a href={story.link} className='story-link'>
-                    <div className='story-title'>{story.title}</div>
-                  </a>
-                  <div className='story-subtitle'>{story.subtitle}</div>
-                  <div className='story-date'>{story.date}</div>
+                  {story.image && (
+                    <div className='story-image-wrapper'>
+                      <img src={story.image} className='story-image' />
+                    </div>
+                  )}
+                  <div>
+                    <a href={story.link} className='story-link'>
+                      <div className='story-title'>{story.title}</div>
+                    </a>
+                    <div className='story-subtitle'>{story.subtitle}</div>
+                    <div className='story-date'>{story.date}</div>
+                  </div>
                 </div>
               ))}
             </FadeOrNot>
@@ -46,9 +53,20 @@ export default class extends React.Component {
             border-radius: 5px;
             margin: 0.5em 0 2em 0;
             padding: 1em;
-            width: 200px;
+            width: 210px;
             background-color: white;
             z-index: 9;
+
+            display: flex;
+          }
+          .story-image-wrapper {
+            height: 50px;
+          }
+          .story-image {
+            height: 100%;
+            border-radius: 4px;
+            margin-right: 10px;
+            vertical-align: center;
           }
           .story-title {
             font-size: 1em;

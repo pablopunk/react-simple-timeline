@@ -61,17 +61,17 @@ var _class = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         {
-          className: 'jsx-3014406798'
+          className: 'jsx-1688073742'
         },
         _react2.default.createElement(
           'div',
           {
-            className: 'jsx-3014406798' + ' ' + 'wrap-relative'
+            className: 'jsx-1688073742' + ' ' + 'wrap-relative'
           },
           _react2.default.createElement(
             'div',
             {
-              className: 'jsx-3014406798' + ' ' + 'stories'
+              className: 'jsx-1688073742' + ' ' + 'stories'
             },
             _react2.default.createElement(
               FadeOrNot,
@@ -79,33 +79,47 @@ var _class = function (_React$Component) {
               this.props.stories.map(function (story, i) {
                 return _react2.default.createElement(
                   'div',
-                  { key: i, className: 'jsx-3014406798' + ' ' + 'story'
+                  { key: i, className: 'jsx-1688073742' + ' ' + 'story'
                   },
-                  _react2.default.createElement(
-                    'a',
-                    { href: story.link, className: 'jsx-3014406798' + ' ' + 'story-link'
+                  story.image && _react2.default.createElement(
+                    'div',
+                    {
+                      className: 'jsx-1688073742' + ' ' + 'story-image-wrapper'
                     },
+                    _react2.default.createElement('img', { src: story.image, className: 'jsx-1688073742' + ' ' + 'story-image'
+                    })
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    {
+                      className: 'jsx-1688073742'
+                    },
+                    _react2.default.createElement(
+                      'a',
+                      { href: story.link, className: 'jsx-1688073742' + ' ' + 'story-link'
+                      },
+                      _react2.default.createElement(
+                        'div',
+                        {
+                          className: 'jsx-1688073742' + ' ' + 'story-title'
+                        },
+                        story.title
+                      )
+                    ),
                     _react2.default.createElement(
                       'div',
                       {
-                        className: 'jsx-3014406798' + ' ' + 'story-title'
+                        className: 'jsx-1688073742' + ' ' + 'story-subtitle'
                       },
-                      story.title
+                      story.subtitle
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      {
+                        className: 'jsx-1688073742' + ' ' + 'story-date'
+                      },
+                      story.date
                     )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    {
-                      className: 'jsx-3014406798' + ' ' + 'story-subtitle'
-                    },
-                    story.subtitle
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    {
-                      className: 'jsx-3014406798' + ' ' + 'story-date'
-                    },
-                    story.date
                   )
                 );
               })
@@ -113,8 +127,8 @@ var _class = function (_React$Component) {
           )
         ),
         _react2.default.createElement(_style2.default, {
-          styleId: '3014406798',
-          css: '.wrap-relative.jsx-3014406798{position:relative;}.stories.jsx-3014406798:after{content:\'\';position:absolute;z-index:-1;top:0;bottom:0;left:50%;border-left:1px solid #ddd;-webkit-transform:translate(-50%);-ms-transform:translate(-50%);transform:translate(-50%);}.story.jsx-3014406798{border:1px solid #eee;border-radius:5px;margin:0.5em 0 2em 0;padding:1em;width:200px;background-color:white;z-index:9;}.story-title.jsx-3014406798{font-size:1em;}.story-subtitle.jsx-3014406798{font-size:0.85em;color:#555;}.story-date.jsx-3014406798{font-size:0.85em;color:#888;}@media (max-width:768px){.story.jsx-3014406798{width:65vw;}.story-title.jsx-3014406798{font-size:1.2em;}.story-subtitle.jsx-3014406798{font-size:1em;}.story-date.jsx-3014406798{font-size:1em;}}'
+          styleId: '1688073742',
+          css: '.wrap-relative.jsx-1688073742{position:relative;}.stories.jsx-1688073742:after{content:\'\';position:absolute;z-index:-1;top:0;bottom:0;left:50%;border-left:1px solid #ddd;-webkit-transform:translate(-50%);-ms-transform:translate(-50%);transform:translate(-50%);}.story.jsx-1688073742{border:1px solid #eee;border-radius:5px;margin:0.5em 0 2em 0;padding:1em;width:210px;background-color:white;z-index:9;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.story-image-wrapper.jsx-1688073742{height:50px;}.story-image.jsx-1688073742{height:100%;border-radius:4px;margin-right:10px;vertical-align:center;}.story-title.jsx-1688073742{font-size:1em;}.story-subtitle.jsx-1688073742{font-size:0.85em;color:#555;}.story-date.jsx-1688073742{font-size:0.85em;color:#888;}@media (max-width:768px){.story.jsx-1688073742{width:65vw;}.story-title.jsx-1688073742{font-size:1.2em;}.story-subtitle.jsx-1688073742{font-size:1em;}.story-date.jsx-1688073742{font-size:1em;}}'
         })
       );
     }

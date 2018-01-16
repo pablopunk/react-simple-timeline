@@ -51,6 +51,7 @@
     "url": "https://github.com/pablopunk/react-simple-timeline"
   },
   "scripts": {
+    "dev": "babel index.js --out-file build.js --watch",
     "build": "babel index.js --out-file build.js",
     "lint": "standard --fix index.js __tests__/*.js",
     "test": "npm run build && npm run lint && jest"

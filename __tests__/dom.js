@@ -52,6 +52,28 @@ test('Renders link as <a> wrapping title', () => {
   ).toEqual(true)
 })
 
+test('Renders image with src', () => {
+  for (const i in stories) {
+    expect(
+      wrapper
+        .find('.story-image')
+        .at(i)
+        .prop('src')
+    ).toBe(stories[i].image)
+  }
+})
+
+test('Does not render image if it\'s null', () => {
+  const storyWithoutImage = {
+    title: '',
+    subtitle: '',
+    link: '',
+    date: ''
+  }
+  const component = shallow(<M stories={[ storyWithoutImage ]} />)
+  expect(component.find('.story-image')).toHaveLength(0)
+})
+
 test('Renders faded component', () => {
   const component = shallow(<M stories={stories} fade />)
   expect(component.find('.story-fade')).toHaveLength(1)
