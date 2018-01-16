@@ -53,7 +53,7 @@ import Timeline from 'react-simple-timeline'
 
 ### Options
 
-#### Fade
+* Fade
 
 For a beautiful animation, use the prop `fade`. It will fade in each element, in order.
 
