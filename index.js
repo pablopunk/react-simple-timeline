@@ -3,8 +3,8 @@ import FadeIn from 'react-fade-in'
 
 const wrapper = fade =>
   fade
-    ? ({ children }) => <FadeIn>{children}</FadeIn>
-    : ({ children }) => <div>{children}</div>
+    ? props => <FadeIn {...props} />
+    : props => <div {...props} />
 
 export default class extends React.Component {
   render () {
