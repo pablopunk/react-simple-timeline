@@ -65,7 +65,7 @@ For a beautiful animation, use the prop `fade`. It will fade in each element, in
 ```
 
 
-### Contribute
+## Contribute
 
 Clone the repo and create a simple react project where you use this component:
 
