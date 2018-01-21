@@ -64,6 +64,27 @@ For a beautiful animation, use the prop `fade`. It will fade in each element, in
 <Timeline fade stories={stories} />
 ```
 
+
+### Contribute
+
+Clone the repo and create a simple react project where you use this component:
+
+```sh
+$ cd your-project/                   # Your project folder
+$ npm install react-simple-timeline  # Install dep
+$ npm link ../path/to/component/repo # Link the cloned repo
+$ npm run dev                        # Build and watch for changes
+```
+
+Make your changes and run the tests:
+
+```sh
+$ npm test
+```
+
+Now you're ready to make the Pull Request.
+
+
 ## License
 
 MIT
