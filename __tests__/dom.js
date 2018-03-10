@@ -52,7 +52,7 @@ test('Renders link as <a> wrapping title', () => {
   ).toEqual(true)
 })
 
-test('Renders image with src', () => {
+test('Renders image with src and alt', () => {
   for (const i in stories) {
     expect(
       wrapper
@@ -60,6 +60,13 @@ test('Renders image with src', () => {
         .at(i)
         .prop('src')
     ).toBe(stories[i].image)
+
+    expect(
+      wrapper
+        .find('.story-image')
+        .at(i)
+        .prop('alt')
+    ).toBe(stories[i].title)
   }
 })
 
