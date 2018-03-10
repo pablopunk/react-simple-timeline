@@ -19,7 +19,7 @@ export default class extends React.Component {
                 <div key={i} className='story'>
                   {story.image && (
                     <div className='story-image-wrapper'>
-                      <img src={story.image} className='story-image' />
+                      <img src={story.image} alt={story.title} className='story-image' />
                     </div>
                   )}
                   <div>
