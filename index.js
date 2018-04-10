@@ -34,7 +34,8 @@ export default class extends React.Component {
             </FadeOrNot>
           </div>
         </div>
-        <style jsx>{`
+        {/* <style jsx>{` // try to fix issue with empty styled component */}
+        <style>{`
           .wrap-relative {
             position: relative;
           }

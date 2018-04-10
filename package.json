@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "react-fade-in": "^0.1.5",
-    "styled-jsx": "^2.2.1"
+    "styled-jsx": "^2.2.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
