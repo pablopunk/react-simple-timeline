@@ -73,6 +73,7 @@ Clone the repo and create a simple react project where you use this component:
 $ cd your-project/                   # Your project folder
 $ npm install react-simple-timeline  # Install dep
 $ npm link ../path/to/component/repo # Link the cloned repo
+$ cd ../path/to/component/repo       # This repo folder
 $ npm run dev                        # Build and watch for changes
 ```
 
