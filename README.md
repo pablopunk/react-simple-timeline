@@ -27,29 +27,35 @@ import Timeline from 'react-simple-timeline'
 //...
 
 <h1>Dwigth Schrute</h1>
-<Timeline stories={[
-  {
-    'title': 'Dunder Mifflin',
-    'subtitle': 'Regional Manager',
-    'date': 'Since 2013',
-    'link': 'http://3.bp.blogspot.com/-y4J3OvYQNNw/U1xfaJ5TJoI/AAAAAAAACvM/WfI5W9vfT2A/s1600/Dwight.jpg',
-    'image': 'https://vignette.wikia.nocookie.net/theoffice/images/c/cd/Dwight_Schrute.jpg/revision/latest?cb=20110105114630'
-  },
-  {
-    'title': 'Dunder Mifflin',
-    'subtitle': 'Assistant Regional Manager',
-    'date': 'Since 2005',
-    'link': 'https://vignette.wikia.nocookie.net/theoffice/images/e/e5/Maxresdefault.jpg/revision/latest?cb=20170626225717',
-    'image': 'https://pbs.twimg.com/profile_images/549268771484229632/WnatiHzT.jpeg'
-  },
-  {
-    'title': 'Schrute Farms',
-    'subtitle': "Mose's cousin",
-    'date': 'Since ever',
-    'link': 'https://theflatearthsociety.org/home/',
-    'image': 'https://pbs.twimg.com/profile_images/3057210206/8fb1263ac03ea384caf4765b5d6660f2.png'
-  }
-]} />
+<div
+  style={{
+    width: "230px"
+  }}
+>
+  <Timeline stories={[
+    {
+      'title': 'Dunder Mifflin',
+      'subtitle': 'Regional Manager',
+      'date': 'Since 2013',
+      'link': 'http://3.bp.blogspot.com/-y4J3OvYQNNw/U1xfaJ5TJoI/AAAAAAAACvM/WfI5W9vfT2A/s1600/Dwight.jpg',
+      'image': 'https://vignette.wikia.nocookie.net/theoffice/images/c/cd/Dwight_Schrute.jpg/revision/latest?cb=20110105114630'
+    },
+    {
+      'title': 'Dunder Mifflin',
+      'subtitle': 'Assistant Regional Manager',
+      'date': 'Since 2005',
+      'link': 'https://vignette.wikia.nocookie.net/theoffice/images/e/e5/Maxresdefault.jpg/revision/latest?cb=20170626225717',
+      'image': 'https://pbs.twimg.com/profile_images/549268771484229632/WnatiHzT.jpeg'
+    },
+    {
+      'title': 'Schrute Farms',
+      'subtitle': "Mose's cousin",
+      'date': 'Since ever',
+      'link': 'https://theflatearthsociety.org/home/',
+      'image': 'https://pbs.twimg.com/profile_images/3057210206/8fb1263ac03ea384caf4765b5d6660f2.png'
+    }
+  ]} />
+</div>
 ```
 
 <img width=300 src="https://github.com/pablopunk/art/raw/master/react-simple-timeline/dwight.png" />
